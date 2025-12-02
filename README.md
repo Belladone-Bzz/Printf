@@ -40,4 +40,4 @@ All source files are compiled with:
 
 #### Library Creation
 
-The library is created using the `ar` command (not libtool) and is output as `libft.a` at the repository root.
+The library is created using the `ar` command (not libtool) and is output as `libftprintf.a` at the repository root.
