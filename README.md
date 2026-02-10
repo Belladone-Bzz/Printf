@@ -44,4 +44,21 @@ git submodule add https://github.com/Belladone-Bzz/Printf.git
  ```
 **3. Execute the provided Makefile to create the ft_printf.a file and include it in your project compilation**
 
+## :page_facing_up: Functions description
 
+Core function of the project :
+|NAME|DECRIPTION|
+|---|---|
+|ft_printf|Can take a variable number of arguments. Check the flag used in argument to call the function that will write the corresponding variable. Return the number of character printed.|
+---
+
+Fuctions that can be called by ft_printf :
+|NAME|RELATED FLAG.S|DECRIPTION|
+|---|---|---|
+|ft_putchar|%c|Write the character c in the standard output. Increment the count pointer each time a character is written.|
+|ft_putadress|%p|Write the memory address given as an argument in the standard output. Write (nil) if no address is found. Increment the count pointer each time a character is written.|
+|ft_puthexa|%x or %X|Write the lowercase or uppercase hexadecimal value of the unsigned long int given as an argument in the standard output.Increment the count pointer each time a character is written.|
+|ft_signed_int|%i or %d|Write the signed int value of the int given as an argument in the standard output.Increment the count pointer each time a character is written.|
+|ft_unsigned_int|%u|Write the unsigned int value of the int given as an argument in the standard output.Increment the count pointer each time a character is written.|
+|ft_putstr|%s|Write the string of char given as an argument in the standard output.Increment the count pointer each time a character is written.|
+---
