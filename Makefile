@@ -5,7 +5,7 @@ OBJ = $(SRC:.c=.o)
 
 CFLAGS = -Wall -Wextra -Werror
 
-NAME = libftprintf.a
+NAME = ft_printf.a
 
 all: $(NAME)
 
