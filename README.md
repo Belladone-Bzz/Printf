@@ -15,29 +15,33 @@ I dit not implement the buffer management of the original printf() function. Thi
 
 ## :key: Instructions
 
-To use the libftprintf.a library, clone the directory with the command `git clone https://github.com/Belladone-Bzz/Printf.git` in the terminal then go in the directory with the command `cd Printf`.
+To use the ft_printf.a library, clone the directory with the command `git clone https://github.com/Belladone-Bzz/Printf.git` in the terminal then go in the directory with the command `cd Printf`.
 
 The library is accompanied by a header file called ft_printf.h, which contains prototypes for all the functions used in the library. Every file is situated in the project's root, meaning no directory or hierarchy needs to be handled other than keeping the library together.
 
-#### Compilation
-
-The project includes a **Makefile** with the following rules:
+The project includes a Makefile with the following rules:
 
 ```
-make       # Compiles the library and creates libft.a
-make all   # Same as above
-make clean # Removes object files
+make        # Compiles the library and creates libft.a
+make all    # Same as above
+make clean  # Removes object files
 make fclean # Removes all generated files including libft.a
-make re    # Recompiles the entire project from scratch
+make re     # Recompiles the entire project from scratch
 ```
+All source files are compiled with `-Wall -Wextra -Werror` flags for strict error checking. To compile, use the command `make` to create the `ft_printf.a` library at the root.
 
-#### Compilation Flags
+#### Using the Library
 
-All source files are compiled with:
-- `-Wall -Wextra -Werror` flags for strict error checking
-- `cc` compiler
-- No relinking on subsequent builds
+To use ft_printf in other projects:
 
-#### Library Creation
+**1. If you're working in a github repository, you can clone the library with the following command to add it as a submodule :**
+```bash
+git submodule add https://github.com/Belladone-Bzz/Printf.git
+```
+**2. Include the header file in your project:**
+ ```c
+ #include "ft_printf.h"
+ ```
+**3. Execute the provided Makefile to create the ft_printf.a file and include it in your project compilation**
 
-The library is created using the `ar` command (not libtool) and is output as `libftprintf.a` at the repository root.
+
